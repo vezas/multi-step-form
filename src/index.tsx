@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { AddOns, Layout, PersonalInfo, SelectPlan, Summary } from 'pages';
-import 'index.scss';
+import { GlobalStyle, Theme } from 'lib/styles';
 
 const routes = [
   {
@@ -33,7 +33,10 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <Theme>
+    <GlobalStyle />
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </Theme>
 );
