@@ -18,6 +18,7 @@ export interface DefaultTheme {
     weight700: string;
   };
   layout: {
+    gapElementsLittle: string;
     gapElementsSmall: string;
     gapElementsMedium: string;
     gapElementsBig: string;

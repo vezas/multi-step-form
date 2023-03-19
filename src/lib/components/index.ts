@@ -1,4 +1,3 @@
-export { Form } from './Forms';
 export { FormField } from './Forms';
 export { Stepper } from './Stepper';
 

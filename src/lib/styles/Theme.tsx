@@ -22,6 +22,7 @@ export const theme: DefaultTheme = {
     weight700: '700'
   },
   layout: {
+    gapElementsLittle: '0.5rem',
     gapElementsSmall: '1.5rem',
     gapElementsMedium: '3rem',
     gapElementsBig: '5rem'
