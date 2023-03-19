@@ -20,6 +20,11 @@ export const theme: DefaultTheme = {
     weight400: '400',
     weight500: '500',
     weight700: '700'
+  },
+  layout: {
+    gapElementsSmall: '1.5rem',
+    gapElementsMedium: '3rem',
+    gapElementsBig: '5rem'
   }
 };
 

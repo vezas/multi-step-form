@@ -3,22 +3,23 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { AddOns, Layout, PersonalInfo, SelectPlan, Summary } from 'pages';
 import { GlobalStyle, Theme } from 'lib/styles';
+import { paths } from 'lib/constants';
 
-const routes = [
+export const routes = [
   {
-    path: '/personal-detail',
+    path: paths.detailInfo,
     element: <PersonalInfo />
   },
   {
-    path: '/select-plan',
+    path: paths.selectPlan,
     element: <SelectPlan />
   },
   {
-    path: '/pick-add-ons',
+    path: paths.addOns,
     element: <AddOns />
   },
   {
-    path: '/summary',
+    path: paths.summary,
     element: <Summary />
   }
 ];
