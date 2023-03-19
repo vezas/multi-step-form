@@ -25,7 +25,8 @@ export const theme: DefaultTheme = {
     gapElementsLittle: '0.5rem',
     gapElementsSmall: '1.5rem',
     gapElementsMedium: '3rem',
-    gapElementsBig: '5rem'
+    gapElementsBig: '5rem',
+    radius: '7.5px'
   }
 };
 

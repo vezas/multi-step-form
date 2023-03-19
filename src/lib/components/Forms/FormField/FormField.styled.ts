@@ -11,5 +11,6 @@ interface StyledLabelProps {
 }
 
 export const StyledLabel = styled.label<StyledLabelProps>`
-  font-size: ${({ hide }) => (hide ? '0' : '1.5rem')};
+  font-size: ${({ hide }) => (hide ? '0' : '1.4rem')};
+  font-weight: ${({ theme }) => theme.font.weight400};
 `;

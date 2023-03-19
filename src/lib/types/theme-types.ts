@@ -22,5 +22,6 @@ export interface DefaultTheme {
     gapElementsSmall: string;
     gapElementsMedium: string;
     gapElementsBig: string;
+    radius: string;
   };
 }
