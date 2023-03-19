@@ -37,8 +37,10 @@ export const StyledNavLink = styled(NavLink)`
 
   grid-area: 1 / 1 / -1 / span 1;
 
-  &:focus {
+  &:focus-visible {
     outline: transparent;
+    border-color: ${({ theme }) => theme.colors.marineBlue};
+    color: ${({ theme }) => theme.colors.marineBlue};
   }
 
   &.active {

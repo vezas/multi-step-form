@@ -8,7 +8,7 @@ export const Stepper: FC = () => {
       {stepperData.map(({ to, description }, index) => (
         <ListItem key={to}>
           <StyledNavLink to={to}>{index + 1}</StyledNavLink>
-          <MenuStyledParagraph weight='light' color='gray' uppercase>
+          <MenuStyledParagraph weight='light' color='white' uppercase>
             Step {index + 1}
           </MenuStyledParagraph>
           <MenuStyledParagraph weight='bold' color='white' uppercase>
