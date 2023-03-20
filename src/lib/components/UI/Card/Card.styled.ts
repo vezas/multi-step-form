@@ -8,16 +8,18 @@ export const Card = styled.main`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content min-content;
+  row-gap: 175px;
   align-content: space-between;
   background-color: ${({ theme }) => theme.colors.lightBlue};
 
   @media ${devices.tablet} {
-    min-height: auto;
+    min-height: 520px;
     height: 75vh;
     max-height: 600px;
     max-width: 800px;
     grid-template-columns: min-content 1fr;
     grid-template-areas: 'stepper form-part' 'stepper buttons-part';
+    row-gap: 0;
     column-gap: ${({ theme }) => theme.layout.gapElementsMedium};
     padding: ${({ theme }) => theme.layout.gapElementsSmall};
     background-color: ${({ theme }) => theme.colors.white};
