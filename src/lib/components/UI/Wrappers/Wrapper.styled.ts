@@ -19,6 +19,8 @@ export const ContentGroup = styled(Wrapper)`
   border-radius: ${({ theme }) => theme.layout.radius};
 
   @media ${devices.tablet} {
+    padding-top: 5vh;
+
     position: relative;
     inset: unset;
     transform: unset;
