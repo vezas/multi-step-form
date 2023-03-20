@@ -17,6 +17,16 @@ html {
 }
 
 body {
-  background-color: ${({ theme }) => theme.colors.lightBlue}
+  background-color: ${({ theme }) => theme.colors.lightBlue};
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 `;

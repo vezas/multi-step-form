@@ -23,5 +23,6 @@ export interface DefaultTheme {
     gapElementsMedium: string;
     gapElementsBig: string;
     radius: string;
+    radiusCard: string;
   };
 }
