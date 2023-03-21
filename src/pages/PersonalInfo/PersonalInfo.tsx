@@ -10,7 +10,7 @@ export const PersonalInfo: FC = () => {
         <TextWrapper>
           <StyledHeading2>Personal info</StyledHeading2>
           <StyledParagraph color='gray'>
-            Please provide your name, email address, and phone number.
+            Please provide your name, email address and phone number.
           </StyledParagraph>
         </TextWrapper>
         <Form>
@@ -18,10 +18,10 @@ export const PersonalInfo: FC = () => {
             <StyledInput id='name' placeholder='e.g. Stephen King' />
           </FormField>
           <FormField label='Email Adress'>
-            <StyledInput placeholder='e.g. stephenking@lorem.com' />
+            <StyledInput id='email' placeholder='e.g. stephenking@lorem.com' />
           </FormField>
           <FormField label='Phone Number'>
-            <StyledInput placeholder='e.g. +1 234 567 890' type='email' />
+            <StyledInput id='phone' placeholder='e.g. +1 234 567 890' type='email' />
           </FormField>
         </Form>
       </ContentGroup>

@@ -1,1 +1,1 @@
-export { ButtonsWrapper, TextWrapper, ContentGroup } from './Wrapper.styled';
+export { ButtonsWrapper, TextWrapper, ContentGroup, SwitcherWrapper } from './Wrapper.styled';

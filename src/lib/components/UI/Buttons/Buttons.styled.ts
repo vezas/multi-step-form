@@ -30,6 +30,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
         : variant === 'accept-form-btn'
         ? theme.colors.pastelBlue
         : theme.colors.purplishBlue};
+    color: ${({ theme, variant }) => variant === 'back-btn' && theme.colors.marineBlue};
   }
 
   &:focus-visible {

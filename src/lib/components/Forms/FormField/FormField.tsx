@@ -4,17 +4,14 @@ import { StyledLabel, FormFieldContainer } from './FormField.styled';
 interface FormFieldProps {
   label: string;
   children: JSX.Element;
-  hide?: boolean;
 }
 
-export const FormField: FC<FormFieldProps> = ({ label, children, hide }) => {
+export const FormField: FC<FormFieldProps> = ({ label, children }) => {
   const id = Children.only(children)?.props.id;
 
   return (
     <FormFieldContainer>
-      <StyledLabel hide={hide} htmlFor={id}>
-        {label}
-      </StyledLabel>
+      <StyledLabel htmlFor={id}>{label}</StyledLabel>
       {children}
     </FormFieldContainer>
   );

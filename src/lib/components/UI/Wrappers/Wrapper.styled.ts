@@ -15,7 +15,7 @@ export const ContentGroup = styled(Wrapper)`
   top: 20vh;
   left: 50%;
   transform: translateX(-50%);
-  padding: ${({ theme }) => theme.layout.gapElementsSmall};
+  padding: ${({ theme }) => theme.layout.gapElementsMedium};
   border-radius: ${({ theme }) => theme.layout.radius};
 
   @media ${devices.tablet} {
@@ -36,4 +36,12 @@ export const ButtonsWrapper = styled(Wrapper)`
   flex-direction: row-reverse;
   justify-content: space-between;
   justify-items: flex-end;
+`;
+
+export const SwitcherWrapper = styled(Wrapper)`
+  grid-area: switcher;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 `;

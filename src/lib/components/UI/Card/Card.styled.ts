@@ -8,7 +8,7 @@ export const Card = styled.main`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content min-content;
-  row-gap: 175px;
+  row-gap: 70vh;
   align-content: space-between;
   background-color: ${({ theme }) => theme.colors.lightBlue};
 
@@ -20,7 +20,7 @@ export const Card = styled.main`
     grid-template-columns: min-content 1fr;
     grid-template-areas: 'stepper form-part' 'stepper buttons-part';
     row-gap: 0;
-    column-gap: ${({ theme }) => theme.layout.gapElementsMedium};
+    column-gap: ${({ theme }) => theme.layout.gapElementsSmall};
     padding: ${({ theme }) => theme.layout.gapElementsSmall};
     background-color: ${({ theme }) => theme.colors.white};
     border-radius: ${({ theme }) => theme.layout.radiusCard};

@@ -17,6 +17,10 @@ export const StyledInput = styled.input`
     border-color: ${({ theme }) => theme.colors.purplishBlue};
   }
 
+  &:hover {
+    border-color: ${({ theme }) => theme.colors.purplishBlue};
+  }
+
   &:invalid {
     border-color: ${({ theme }) => theme.colors.strawberryRed};
   }
