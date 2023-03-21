@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledCheckbox = styled.input`
+export const StyledSwitcher = styled.input`
   opacity: 0;
   position: absolute;
 

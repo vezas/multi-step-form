@@ -1,19 +1,21 @@
 import { FC, ChangeEventHandler } from 'react';
 import { SwitcherWrapper } from 'lib/components/UI';
-import { StyledCheckbox } from './Switcher.styled';
+import { StyledSwitcher } from './Switcher.styled';
 
 interface SwitcherProps {
   id: string;
   name: string;
+  uncheckedText: string;
+  checkedText: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
 }
 
-export const Switcher: FC<SwitcherProps> = ({ id, name, onChange }) => {
+export const Switcher: FC<SwitcherProps> = ({ id, name, onChange, uncheckedText, checkedText }) => {
   return (
     <SwitcherWrapper as='div'>
-      <StyledCheckbox type='checkbox' id={id} name={name} onChange={onChange} />
+      <StyledSwitcher type='checkbox' id={id} name={name} onChange={onChange} />
       <label htmlFor={id}>
-        Monthly <span>Yearly</span>
+        {uncheckedText} <span>{checkedText}</span>
       </label>
     </SwitcherWrapper>
   );

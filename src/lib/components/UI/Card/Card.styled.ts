@@ -3,7 +3,7 @@ import { devices } from 'lib/styles';
 
 export const Card = styled.main`
   min-height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;

@@ -1,2 +1,2 @@
 export { FormField } from './FormField';
-export { RadioField } from './RadioField';
+export { RecktangleField } from './RecktangleField';
