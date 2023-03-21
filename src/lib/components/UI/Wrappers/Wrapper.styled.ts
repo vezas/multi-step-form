@@ -11,19 +11,13 @@ const Wrapper = styled.section`
 export const ContentGroup = styled(Wrapper)`
   width: 90%;
   margin-inline: auto;
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: -125px;
   padding: ${({ theme }) => theme.layout.gapElementsMedium};
   border-radius: ${({ theme }) => theme.layout.radius};
 
   @media ${devices.tablet} {
+    margin-top: 0;
     padding-top: 5vh;
-
-    position: relative;
-    inset: unset;
-    transform: unset;
   }
 `;
 
@@ -36,6 +30,7 @@ export const ButtonsWrapper = styled(Wrapper)`
   flex-direction: row-reverse;
   justify-content: space-between;
   justify-items: flex-end;
+  margin-top: auto;
 `;
 
 export const SwitcherWrapper = styled(Wrapper)`

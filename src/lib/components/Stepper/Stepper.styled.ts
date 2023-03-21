@@ -9,7 +9,7 @@ interface ListProps {
 }
 
 export const List = styled.ol<ListProps>`
-  height: 45vw;
+  height: 200px;
   padding-top: 5vh;
   display: flex;
   justify-content: center;

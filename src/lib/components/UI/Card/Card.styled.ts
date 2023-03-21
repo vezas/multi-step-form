@@ -3,12 +3,12 @@ import { devices } from 'lib/styles';
 
 export const Card = styled.main`
   min-height: 100vh;
+  overflow: hidden;
   width: 100%;
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content min-content;
-  row-gap: 70vh;
+  gap: ${({ theme }) => theme.layout.gapElementsLittle};
   align-content: space-between;
   background-color: ${({ theme }) => theme.colors.lightBlue};
 
