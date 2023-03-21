@@ -1,12 +1,14 @@
-import { FC, useState } from 'react';
+import { FC, useContext } from 'react';
 import { Form, RecktangleField, Switcher } from 'lib/components/Forms';
 import { StyledParagraph, StyledHeading2 } from 'lib/components/Typography';
 import { Button, ContentGroup, ButtonsWrapper, TextWrapper } from 'lib/components/UI';
+import { FormContext } from 'lib/stores';
 import { selectPlanData } from './data';
 import { StyledFormContent } from './SelectPlan.styled';
 
 export const SelectPlan: FC = () => {
-  const [monthly, setMonthly] = useState(true);
+  const { monthly, setMonthly } = useContext(FormContext);
+
   const togglePeriod = () => setMonthly((prevState) => !prevState);
 
   return (

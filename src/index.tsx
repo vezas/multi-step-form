@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { AddOns, Layout, PersonalInfo, SelectPlan, Summary } from 'pages';
 import { GlobalStyle, Theme } from 'lib/styles';
+import { FormContextProvider } from 'lib/stores';
 import { paths } from 'lib/constants';
 
 export const routes = [
@@ -34,10 +35,12 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <Theme>
-    <GlobalStyle />
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  </Theme>
+  <FormContextProvider>
+    <Theme>
+      <GlobalStyle />
+      <React.StrictMode>
+        <RouterProvider router={router} />
+      </React.StrictMode>
+    </Theme>
+  </FormContextProvider>
 );

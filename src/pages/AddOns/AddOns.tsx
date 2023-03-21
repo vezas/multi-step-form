@@ -1,12 +1,14 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
 import { Form, RecktangleField } from 'lib/components/Forms';
 import { StyledParagraph, StyledHeading2 } from 'lib/components/Typography';
 import { Button, ContentGroup, ButtonsWrapper, TextWrapper } from 'lib/components/UI';
+import { FormContext } from 'lib/stores';
 import { addOnsData } from './data';
 import { StyledFormContent } from './AddOns.styled';
 
 export const AddOns: FC = () => {
-  const monthly = true;
+  const { monthly } = useContext(FormContext);
+
   return (
     <>
       <ContentGroup>
