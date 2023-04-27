@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { devices } from 'lib/styles';
 
 interface StyledFormProps {
-  variant?: 'radio';
+  variant?: 'select-plan';
 }
 
 export const StyledForm = styled.form<StyledFormProps>`
@@ -14,8 +14,13 @@ export const StyledForm = styled.form<StyledFormProps>`
   gap: ${({ theme }) => theme.layout.gapElementsSmall};
 
   @media ${devices.tablet} {
-    display: ${({ variant }) => variant === 'radio' && 'grid'};
+    display: ${({ variant }) => variant === 'select-plan' && 'grid'};
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 'card card card' 'switcher switcher switcher';
+  }
+
+  & > input[type='submit'] {
+    opacity: 0;
+    position: absolute;
   }
 `;

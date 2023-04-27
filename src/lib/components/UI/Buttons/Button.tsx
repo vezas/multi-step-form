@@ -6,8 +6,8 @@ interface ButtonProps extends HTMLProps<ButtonProps> {
   children: ReactNode;
 }
 
-export const Button: FC<ButtonProps> = ({ children, variant }, props) => (
-  <StyledButton {...props} variant={variant}>
+export const Button: FC<ButtonProps> = ({ children, variant, onClick }, props) => (
+  <StyledButton {...props} onClick={onClick} variant={variant}>
     {children}
   </StyledButton>
 );

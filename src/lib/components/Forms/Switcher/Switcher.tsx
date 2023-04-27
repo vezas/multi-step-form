@@ -1,19 +1,20 @@
-import { FC, ChangeEventHandler } from 'react';
+import { FC } from 'react';
+import { UseFormRegisterReturn } from 'react-hook-form';
 import { SwitcherWrapper } from 'lib/components/UI';
 import { StyledSwitcher } from './Switcher.styled';
 
 interface SwitcherProps {
   id: string;
-  name: string;
+  name?: string;
   uncheckedText: string;
   checkedText: string;
-  onChange: ChangeEventHandler<HTMLInputElement>;
+  register: UseFormRegisterReturn;
 }
 
-export const Switcher: FC<SwitcherProps> = ({ id, name, onChange, uncheckedText, checkedText }) => {
+export const Switcher: FC<SwitcherProps> = ({ id, uncheckedText, checkedText, register }) => {
   return (
     <SwitcherWrapper as='div'>
-      <StyledSwitcher type='checkbox' id={id} name={name} onChange={onChange} />
+      <StyledSwitcher {...register} type='checkbox' id={id} />
       <label htmlFor={id}>
         {uncheckedText} <span>{checkedText}</span>
       </label>
